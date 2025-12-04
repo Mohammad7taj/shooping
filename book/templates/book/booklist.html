@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+</head>
+<body>
+    <a href="{% url 'home' %}">خانه</a>
+    <ul class="list-group">
+        {% if books %}
+        {% for book in books %}
+          <a href="{% url 'ditale' id=book.id %}"class="nav-link">{{ book.title }}</a>
+          {% if user.is_superuser %}
+          <a href="{% url 'editbook' id=book.id %}"class="nav-link">ویرایش</a>
+          {% endif %}
+            {{ book.author }}
+        {% endfor %}
+        {% endif %}
+    </ul>
+</body>
+</html>

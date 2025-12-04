@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new_ahthor</title>
+</head>
+<body>
+    <form action="{% url 'admin' %}" method="post">
+        {% csrf_token %}
+
+        <label for="id_name">نام</label>
+        {{ form.fname }}
+        <label for="id_name">نام خانوادگی</label>
+        {{ form.lname }}
+        <label for="id_name">تاریخ تولد</label>
+        {{ form.birthdate }}
+        <label for="id_name">بیوگرافی</label>
+        {{ form.bio }}
+        <input class="btn btn-success mt-2" type="submit" value="ایجاد">
+        
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
