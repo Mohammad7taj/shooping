@@ -16,7 +16,4 @@ urlpatterns = [
     path('new_ahthor/', createahoter, name='new_ahthor'),
     path('newbook/', creatbook, name='new_book'),
     path('edit_book/<str:id>/', edit_book,name='editbook')
-    
-
-
 ]
