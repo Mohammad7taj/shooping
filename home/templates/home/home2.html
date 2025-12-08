@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,8 @@
 <tr>
     <td>
         
- <a href="http://127.0.0.1:5500/account/templatse/login.html"> <img src="/staticfile/images/ادمک home2.webp" width="35"></a> 
-<img src="/staticfile/images/خرید home2.png" width="35">
+ <a href=""> <img src="{% static 'customer.jpg' %}" width="35"></a> 
+<img src="{% static 'images/shoop.jpg' %}" width="35">
 </td>
 <td>
 <h3 style="margin-top: -1px; margin-left: -18px;">
@@ -19,7 +20,7 @@
 </h3>
 </td>
 <td>
-<img src="/staticfile/images/فهرست.png" align="right"  width="35">
+<img src="{% static 'feh.jpg' %}" align="right"  width="35">
     </td>
 </tr>
 <tr>
@@ -42,10 +43,10 @@
     <table align="center">
         <tr>
             <td>
-              <a href=""> <img src="/staticfile/images/ژانر اجتمایی (1).jpg" width="200"> </a>  
+              <a href="{% url 'list' %}"> <img src="{% static 'images/egtema.jpg' %}" width="200"> </a>  
             </td>
             <td>
-                <img src="/staticfile/images/ژانر داستان.jpg" width="200">
+                <img src="{% static 'images/dastan.jpg' %}" width="200">
             </td>
         </tr>
     </table>
@@ -57,24 +58,25 @@
     </h2>
 
     <table border="1" align="right">
+
         <tr>
             <td>
-                <img src="/staticfile/images/10-ketabi-ke-bayad-dar-sal-2025-bekhanid-13-zademohamad.webp" width="150">
+                <img src="{% static 'images/ss1.jpg' %}" width="150">
             </td>
             <td>
-                <img src="/staticfile/images/10-ketabi-ke-bayad-dar-sal-2025-bekhanid-16-zademohamad.webp" width="150">
+                <img src="{% static 'images/ss2.jpg' %}" width="150">
             </td>
             <td>
-                <img src="/staticfile/images/10-ketabi-ke-bayad-dar-sal-2025-bekhanid-17-zademohamad.webp" width="150">
+                <img src="{% static 'images/ss3.jpg' %}" width="150">
             </td>
             <td>
-                <img src="/staticfile/images/10-ketabi-ke-bayad-dar-sal-2025-bekhanid-20-zademohamad-2.webp" width="150">
+                <img src="{% static 'images/ss4.jpg' %}" width="150">
             </td>
             <td>
-                <img src="/staticfile/images/10-ketabi-ke-bayad-dar-sal-2025-bekhanid-20-zademohamad.webp" width="150">
+                <img src="{% static 'images/ss5.jpg' %}" width="150">
             </td>
             <td>
-                <img src="/staticfile/images/10-ketabi-ke-bayad-dar-sal-2025-bekhanid-3-zademohamad.webp" width="150">
+                <img src="{% static 'images/ss6.jpg' %}" width="150">
             </td>
           
     </table>
